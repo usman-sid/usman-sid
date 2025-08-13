@@ -1,0 +1,68 @@
+Git Commands for Pull & Push
+
+1️⃣ Clone Repository (First Time Only)
+git clone https://github.com/username/repo-name.git
+
+2️⃣ Check Repository Status
+git status
+
+3️⃣ Pull Latest Changes from GitHub
+git pull origin main
+
+4️⃣ Add Changes to Staging
+git add .
+git add filename.ext
+
+5️⃣ Commit Changes
+git commit -m "Your commit message"
+
+6️⃣ Push Changes to GitHub
+git push origin main
+
+7️⃣ Branch Management
+Show all branches:
+git branch
+
+Create new branch:
+git branch branch-name
+Switch branch:
+git checkout branch-name
+
+Create & switch in one step:
+git checkout -b branch-name
+
+Push a new branch to GitHub:
+git push -u origin branch-name
+
+8️⃣ View Commit History
+git log --oneline
+
+9️⃣ Undo Changes
+Undo changes in a file (restore from last commit):
+git checkout -- filename.ext
+
+Unstage a file:
+git reset filename.ext
+
+Undo last commit but keep changes:
+git reset --soft HEAD~1
+
+Undo last commit and remove changes:
+git reset --hard HEAD~1
+
+🔟 Remote Repository Management
+Show remotes:
+git remote -v
+
+Add remote:
+git remote add origin <repository-url>
+
+Change remote URL:
+git remote set-url origin <repository-url>
+
+✅ Typical Daily Workflow
+git pull origin main
+git status
+git add .
+git commit -m "Description of changes"
+git push origin main
